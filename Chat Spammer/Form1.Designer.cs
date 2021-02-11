@@ -30,6 +30,7 @@ namespace Chat_Spammer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Button1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.RichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
@@ -110,6 +111,7 @@ namespace Chat_Spammer
             this.Controls.Add(this.RichTextBox1);
             this.Controls.Add(this.Button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
