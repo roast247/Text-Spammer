@@ -63,5 +63,30 @@ namespace Chat_Spammer
         {
             _dragging = false;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            _dragging = true;
+            _start_point = new Point(e.X, e.Y);
+        }
+
+        private void label1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this._start_point.X, p.Y - this._start_point.Y);
+            }
+        }
+
+        private void label1_MouseUp(object sender, MouseEventArgs e)
+        {
+            _dragging = false;
+        }
     }
 }

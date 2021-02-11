@@ -92,6 +92,10 @@ namespace Chat_Spammer
             this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Text Spammer";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
+            this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label1_MouseUp);
             // 
             // Form1
             // 
